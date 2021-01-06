@@ -6,8 +6,13 @@
 	"scripts": {
 		"deploy": "gh-pages -d dist"
 	},
-	"keywords": [],
+	"keywords": [
+		"Happy Diwali",
+		"Festival",
+		"Happy Diwali 2021"
+	],
 	"author": "Madhav Jha",
+	"homepage": "https://madhavrjha.github.io/happy-diwali",
 	"license": "ISC",
 	"dependencies": {
 		"gh-pages": "^3.1.0"
