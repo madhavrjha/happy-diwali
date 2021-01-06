@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Charm&display=swap');
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #000;
+	color: #fff;
+	overflow: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	background: url('../images/container-background-new.png') no-repeat center 80% /
+		cover;
+	animation: moveBg 30s linear 0s infinite alternate;
+}
+
+.container p {
+	font-weight: bolder;
+	font-family: 'Charm', cursive;
+}
+
+.animated {
+	font-size: 6rem;
+	font-family: 'Charm', cursive;
+	background: url('../images/text-background-new-1.png') no-repeat;
+	color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
+	animation: moveBg 90s linear 0s infinite alternate;
+}
+
+@media screen and (max-width: 525px) {
+	.animated {
+		background-repeat: repeat;
+	}
+}
+
+@keyframes moveBg {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
